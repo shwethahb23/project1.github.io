@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <style>
+        .nav{
+            width: 1540px;
+            height: 120px;
+            background-color: aliceblue;
+        }
+
+        .nav > img{
+            width: 60px;
+            height: 60px;
+            
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    
+        .nav ul{
+            list-style-type:none;
+            background-color: darkblue;
+            color:wheat;
+            text-decoration:none;
+                    
+        }
+
+        .nav li a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+         
+        .nav ul li{
+            display: inline-block;
+            padding: 10px;
+           
+            
+        }
+        
+        .nav ul li:hover{
+        background-color: green;
+        color: white;
+        }
+
+        .nav .dropdown{
+            display: none;
+        }
+
+        .nav ul li:hover .dropdown{
+            display: block;
+            position: absolute;
+            margin-left: -0.3cm;
+        
+        }
+
+        
+        .nav .dropdown ul{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav .dropdown ul li{
+            display: block;
+                       
+        }
+    
+        
+    
+        h1{
+            font-size: 32px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            margin: 10px;
+            padding: 20px;
+            letter-spacing: 2px;
+        }
+
+        .nav .brand > img{
+            font-size: 30px;
+            justify-content: space-between;
+            color: black;         
+            
+        }
+
+        .nav .brand > img:hover{
+            animation: move 1.5s ease-in-out infinite;
+            cursor: pointer;
+        }
+
+        @keyframes move {
+            0%, 100% {
+              transform: translateY(0px);
+            }
+            20% {
+              transform: translateY(-20px);
+            }
+            40% {
+              transform: translateY(0px);
+            }
+          }
+
+        table,tr,td{
+            border: 0px solid black;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        h5{
+            font-size: 15px;
+            color: black;
+            text-align: center;
+            width: 300px;
+            height: 10px;
+        }
+
+        td{
+            font-size: 12px;
+            color: gray;
+            text-align: center;
+            width: 300px;
+            height: 10px;
+        }
+
+        .nav .tab{
+            display: grid;
+           grid-template-columns: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="https://brandlogos.net/wp-content/uploads/2022/03/myntra-logo-brandlogos.net_.png">
+        <ul>
+            <li><a href="#" style="font-size: 16px;"><b>MEN</b></a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#" style="color: red;font-size: 14px;">Topwear</a></li>                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Casual-Shirts</a></li>
+                                <li><a href="#">Formal-Shirts</a></li>
+                                <li><a href="#">Suits</a></li>
+                        
+                        <li><a href="#" style="color: red;font-size: 14px;">Indian & Festive Wear</a></li>
+                        
+                                <li><a href="#">Kurtas & Kurtas Sets</a></li>
+                                <li><a href="#">Sherwanis</a></li>
+                                <li><a href="#">Dhotis</a></li>
+                                <li><a href="#">Nehru Jackets</a></li>                          
+                        
+                            
+                        <li><a href="#" style="color: red;font-size: 14px;">Bottomwear</a></li>
+                        <li><a href="#" style="color: red;font-size: 14px;">Innerwear & Sleepwear</a></li>
+                        <li><a href="#" style="color: red;font-size: 14px;">Footwear</a></li>
+                        <li><a href="#" style="color: red;font-size: 14px;">Sports & Active Wear</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" style="font-size: 16px;"><b>WOMEN</b></a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#" style="color: yellow;font-size: 14px;">Indian & Fusion Wear</a></li>
+                                <li><a href="#">Kurta & Suits</a></li>
+                                <li><a href="#">Kurthi,Tunics & Tops</a></li>
+                                <li><a href="#">Sarees</a></li>
+                                <li><a href="#">Ethical wear</a></li>                    
+                    
+                        <li><a href="#" style="color: yellow;font-size: 14px;">Western wear</a></li>
+                                <li><a href="#">Dresses</a></li>
+                                <li><a href="#">Tops</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Shorts & Skirts</a></li>
+                                      
+                        <li><a href="#" style="color: yellow;font-size: 14px;">Sports & Active Wear</a></li>  
+                                <li><a href="#">Clothing</a></li>
+                                <li><a href="#">Footwear</a></li>
+                                <li><a href="#">Sports Accessories</a></li>
+                                <li><a href="#">Sports Equipments</a></li>
+                                            
+                    </ul>            
+                </div>
+            </li>
+            <li><a href="#" style="font-size: 16px;"><b>KIDS</b></a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#" style="color: orangered;font-size: 14px;">Boys Clothing</a></li>                       
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                
+                        <li><a href="#" style="color: orangered;font-size: 14px;">Girls Clothing</a></li>
+                                <li><a href="#">Dresses</a></li>
+                                <li><a href="#">Tops</a></li>
+                                <li><a href="#">Jeans & Jackets</a></li>
+                                         
+                        <li><a href="#" style="color: orangered;font-size: 14px;">Footwear</a></li>
+                                <li><a href="#">Casual Shoes</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">Sandals</a></li>                     
+                    
+                        <li><a href="#" style="color: orangered;font-size: 14px;">Toys & Games</a></li>
+                                <li><a href="#">Activity Toys</a></li>
+                                <li><a href="#">Soft Toys</a></li>
+                                <li><a href="#">Learning & Development</a></li>
+                                        
+                        <li><a href="#" style="color:orangered;font-size: 14px;">Personal Care</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" style="font-size: 16px;"><b>HOME & LIVING</b></a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#" style="color:yellowgreen;font-size: 14px;">Bed Linen & Furnishing</a></li> 
+                                <li><a href="#">Bedsheets</a></li>
+                                <li><a href="#">Bed-Runner</a></li>
+                                <li><a href="#">Bedding Sets</a></li>
+                                <li><a href="#">Bed Covers</a></li>
+                                <li><a href="#">Diwan Sets</a></li>
+                                <li><a href="#">Sofa Sets</a></li>
+                        
+                        <li><a href="#" style="color:yellowgreen;font-size: 14px;">Flooring</a></li>
+                            <li><a href="#">Floor Runner</a></li>
+                            <li><a href="#">Carpets</a></li>
+                            <li><a href="#">Floor Mats</a></li>
+                            <li><a href="#">Door Mats</a></li>
+                            <li><a href="#" style="color:yellowgreen;font-size: 14px;">Home Decor</a></li>
+                            <li><a href="#">Plants & Plantners</a></li>
+                            <li><a href="#">Clocks</a></li>
+                            <li><a href="#">Mirrors</a></li>
+                            <li><a href="#">Wall Decor</a></li>
+                            <li><a href="#">Festival Decor</a></li>
+                        
+                        <li><a href="#" style="color:yellowgreen;font-size: 14px;">Lamps & Lightening</a></li>
+                            <li><a href="#">Floor Lamp</a></li>
+                            <li><a href="#">Table Lamp</a></li>
+                            <li><a href="#">Wall Lamp</a></li>
+                            <li><a href="#">String Lamp</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" style="font-size: 16px;"><b>BEAUTY</b></a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#" style="color: violet;font-size: 14px;">Makeup</a></li>
+                                <li><a href="#">Lipstick</a></li>
+                                <li><a href="#">Lip Liner</a></li>
+                                <li><a href="#">Mascara</a></li>
+                                <li><a href="#">Kajal</a></li>
+                                <li><a href="#">Eye Liner</a></li>                      
+
+                        <li><a href="#" style="color: violet;font-size: 14px;">Skincare,Bath & Body</a></li>
+                                <li><a href="#">Face Wash</a></li>
+                                <li><a href="#">Eye Cream</a></li>
+                                <li><a href="#">Lip Balm</a></li>
+                                <li><a href="#">Body Lotion</a></li>                 
+                                <li><a href="#">Body Scrub</a></li>                 
+                                <li><a href="#">Sunscreen</a></li>                 
+                            
+                        <li><a href="#" style="color: violet;font-size: 14px;">Haircare</a></li>
+                                <li><a href="#">Shampoo</a></li>
+                                <li><a href="#">Hair Oil</a></li>
+                                <li><a href="#">Hair Cream</a></li>
+                                <li><a href="#">Conditioner</a></li>
+                        
+                    </ul>
+            </li>
+
+            <li><a href="#" style="font-size: 16px;"><b>STUDIO</b></a>
+                <div class="dropdown">
+                    <img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/03d0bfb7-357f-4c7d-9a20-a6b601867071/image.png" style="width: 500px;height: 500px;">
+                </div>
+            </li>
+
+        </ul>
+    
+
+
+        <br><br>
+       
+        <h1><i>Biggest Deals On Top Brands <span style="color: blue;"> Min 40% - 50% OFF</span></i></h1>
+        
+        <div class="brand">
+        
+            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F7f%2Fb3%2F7fb3d654ad5233d8acc8accb4f96a11c69e93e6a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]" style="width: 250px;height: 150px;border-radius: 25px;">   
+            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F97%2F60%2F9760baae4682c9d97e4884ae4b46cf639d89f326.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]" style="width:250px;height: 150px;border-radius: 25px;"> 
+            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F09%2F2e%2F092ed902bfcd3bebffd75ae48b1dba50e8c6cfcc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shirts_longsleeved%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/fullscreen]" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.BrsawQGF6ojQR_nw45KywAHaHa&pid=Api&P=0&h=180" style="width: 250px;height: 150px;border-radius: 25px;" aria-placeholder="50% Off">
+            <img src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F30%2F46%2F3046958a56479bfc0fc0b638b3b0259fb258e275.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVEDETAIL%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="https://4.imimg.com/data4/QX/NL/IMOB-6271024/img_20170207_192323-500x500.jpg" style="width: 250px;height: 150px;border-radius: 25px;">        
+                        
+       </div>
+
+        <br><br>
+        
+        <h1><i>Trending In Indian Wear <span style="color: blue;"> Min 40% OFF</span></i></h1>
+
+        <div class="brand">
+
+            <img src="https://tse2.mm.bing.net/th?id=OIP.6swxkBKDa17U5pMpk3rE6gHaJ4&pid=Api&P=0&h=180" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="https://st1.latestly.com/wp-content/uploads/2018/08/collage-1-5.jpg" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="https://assets.vogue.in/photos/61b6d85615fc923d29d9b5d0/master/w_1600%2Cc_limit/AD7_7584.jpg" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="https://shopee.com.my/blog/wp-content/uploads/2021/09/deepavali-outfit-feature-edit.jpg" style="width:250px;height: 150px;border-radius: 25px;">
+            <img src="https://i.pinimg.com/originals/dc/3d/f4/dc3df41cda1d747ec0d552fea3fbf8fb.jpg" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="https://nationalclothing.org/images/2015/03/Indian-men.jpg" style="width: 250px;height: 150px;border-radius: 25px;">
+        </div>
+
+        <br><br>
+
+        <h1><i>Trending In Sports Wear<span style="color: blue;"> Min 50% OFF</span></i></h1>
+
+        <div class="brand">
+
+            <img src="https://i.pinimg.com/originals/3f/16/1e/3f161e1ff3e5d487b531ada8bc4b0b96.jpg" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="https://cdn.shopify.com/s/files/1/0247/6956/0658/products/194501760584-2_1800x1800.jpg?v=1608298330" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="https://www.highsnobiety.com/static-assets/thumbor/pPCgpaPTONpuyhWDhZfxRHJVMyc=/1200x800/www.highsnobiety.com/static-assets/wp-content/uploads/2019/06/20145328/best-sportswear-brands-world-right-now-2-main.jpg" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="https://cdn.magzter.com/1634027684/1676615598/articles/vVXORlT-f1678357735491/POPULAR-SPORTSWEAR-BRANDS-IN-INDIA.jpg" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="https://www.apetogentleman.com/wp-content/uploads/2020/08/nike-sports-3.jpg" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2018/04/p-1-90s-cult-sportswear-brand-fila-engineers-a-comeback.jpg" style="width: 250px;height: 150px;border-radius: 25px;">
+        </div>
+
+        <br><br>
+
+        <h1><i>Trending In Footwear<span style="color: blue;"> Min 30% - 40% OFF</span></i></h1>
+
+        <div class="brand">
+
+            <img src="https://tse4.mm.bing.net/th?id=OIP.uQ9JWNtMrJVEXQnNB4z80AHaJ4&pid=Api&P=0&h=180" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.rZPOn7u5Uby1kzW64rbIEwHaE6&pid=Api&P=0&h=180" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="https://i.ytimg.com/vi/Tiyt1IKQblk/maxresdefault.jpg" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="http://i.stpost.com/product~p~5831D_02~1500.1.jpg" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="https://cdnb.lystit.com/photos/9fd7-2014/01/30/lucky-brand-pink-marshaa-platform-wedge-sandals-product-1-16582650-0-638698121-normal.jpeg" style="width: 250px;height: 150px;border-radius: 25px;">
+            <img src="http://cdnc.lystit.com/photos/2013/08/07/lucky-brand-black-rilo-platform-wedge-sandals-product-1-9561176-654100938.jpeg" style="width: 250px;height: 150px;border-radius: 25px;">
+        </div>
+
+        <br><br>
+
+    <center>
+      <table>
+        
+        <tr>
+            <td>
+             <h5>ONLINE SHOPPING</h5>          
+             <br>
+                Men<br>
+                Women<br>
+                Kids<br>
+                Home & Living<br>
+                Beauty<br>
+                Gift Cards<br>
+                Myntra Insider<br>
+            </td>
+    
+            <td>
+             <h5>USEFUL LINKS</h5>   
+             <br>       
+                Blog<br>
+                Careers<br>
+                Site Map<br>
+                Corporate Information<br>
+                Whitehat<br>
+                Cleartrip<br>
+            </td>
+        
+            <td>
+             <h5>CUSTOMER POLICIES</h5>           
+             <br>
+                Contact Us<br>
+                FAQ<br>
+                T&C<br>
+                Track Orders<br>
+                Shipping<br>
+                Cancellation<br>
+                Returns<br>
+                                
+            </td>
+        </tr>
+
+        <tr>
+            <td  style="text-align: center;font-size: 14px;font-weight: bolder;" colspan="3">
+                100% ORIGINAL guarantee for all products at myntra.com<br>
+                <br>
+                Return within 14days of receiving your order
+            </td>
+        </tr>
+    
+    </table>
+</center>
+        </div>
+    </body>
+</html>
